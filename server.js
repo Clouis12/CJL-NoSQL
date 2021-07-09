@@ -9,7 +9,7 @@ var dbUrl =
   "mongodb+srv://clouis:ahPADMcfGATqrtjp@cluster0.4m8lm.mongodb.net/test"; 
 
 var app = express(); 
-let PORT = 3000; 
+let PORT = process.env.PORT || 80; 
 mongoose.connect(dbUrl); 
 
 
